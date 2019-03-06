@@ -1,0 +1,619 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    display: block;
+    /* margin: 0 auto; */
+    overflow: scroll;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    display: block;
+    background-image: url('../images/background.png');
+    height: 100%;
+    width: 100%;
+    color: #140A25;
+}
+
+/* h1 {
+    font-size: 38px;
+} */
+
+#bkg-img {
+    background-image: url("./assets/images/background.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+p, h2 {
+
+ line-height: 150%;
+       
+}
+
+a:link {
+    color: #140A25; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: plum;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: underline;
+    -o-transition:5s;
+    -ms-transition:5s;
+    -moz-transition:5s;
+    -webkit-transition:5s;
+ /* fading hover */
+    transition:5s;
+  }   
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin: auto;
+}
+
+.upper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: #140A25 solid 2px;
+    height: 80px;
+    background: white;
+    
+}
+
+.nav {
+    margin-left: 905px;
+    padding: 10px 0 0 180px;
+    font-size: 18px;
+
+}
+
+
+.pri {
+    background: #5A142A;
+    height: 78px;
+    padding: 30px 30px;
+    float: left;
+    margin-left: 20%;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 28px;
+    text-align: left;
+    color: #F0DAE3;
+    
+}
+
+
+.column {
+    display: block;
+    
+}
+
+#about {
+    border-right: #140A25 solid 0.5px;
+    line-height: 150%;
+    padding-right: 5px;
+
+}
+
+#portfolio {
+    border-right: #140A25 solid 0.5px;
+    line-height: 150%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#contact {
+    line-height: 150%;
+    padding-left: 5px;
+
+}
+
+
+
+#about, #portfolio, #contact {
+    float: left;
+}
+
+
+.page-title {
+    border-bottom: solid gray 1px;
+    margin: 20px;
+}
+
+.main {
+    border: #140A25 solid 1px;
+    background-color: white;
+    width: 960px;
+    height: auto;
+    position: fixed;
+    left: 20%;
+    top: 10%;
+    margin-top: 30px;
+    
+
+}
+
+.content {
+    margin: 20px;
+    overflow: scroll;
+    
+}
+
+img {
+    float: left;
+    margin-right: 10px;
+    border: 5px solid #140A25;
+    width:210px;
+    height:240px;
+}
+
+.master-wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    margin-bottom: -60px;
+    
+}
+
+form {
+    margin: 20px;
+    color: #140A25;
+}
+
+#button {
+    padding: 15px 25px;
+    background: #5A142A;
+    color: #F0DAE3;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size: 14px;
+
+}
+      
+#button:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.port-page-title {
+    border-bottom: solid gray 1px;
+    margin: 20px;
+}
+
+.port-main {
+    border: #140A25 solid 1px;
+    background-color: white;
+    width: 960px;
+    height: auto;
+    position: fixed;
+    left: 20%;
+    top: 10%;
+    margin-top: 30px;
+
+    
+}
+
+.project1 {
+    float: left;
+    position: relative;
+    margin-left: 20px;
+}
+
+.project1 p {
+    position: absolute;
+    background: #400D2A;
+    color: #F0DAE3;
+    bottom: 2px;
+    padding: 5px 22px;
+}
+
+.project2 {
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 250px;
+}
+
+.project2 p {
+    position: absolute;
+    background: #400D2A;
+    color: #F0DAE3;
+    bottom: 1px;
+    padding: 5px 20px;
+}
+
+.project3 {
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.project3 p {
+    position: absolute;
+    background: #400D2A;
+    color: #F0DAE3;
+    bottom: 1px;
+    padding: 7px 42px;
+}
+
+.project4 {
+    float: left;
+    position: relative;
+    margin: 10px 0px 50px 20px;
+    
+}
+
+.project4 p {
+    position: absolute;
+    background: #400D2A;
+    color: #F0DAE3;
+    bottom: 1px;
+    padding: 5px 24px;
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #400D2A;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    color: #F0DAE3;
+    height: 60px;
+    border-top: 5px solid #140A25
+}
+
+@media screen and (max-width: 980px) {
+    /* About page */
+    .pri {
+        margin-left: 5%;
+    }
+
+    .nav {
+        margin-left: 550px;
+    }
+    .main {
+        width: 700px;
+        left: 5%;
+    }
+
+
+    /* Portfolio page */
+
+    .port-main {
+        width: 600px;
+        left: 5%;
+    }
+
+    .project2 {
+        margin-left: 10px;
+        margin-right: 25px;
+    }
+
+    .project4 {
+        margin-left: 10px;
+    }
+
+    /* Contact page */
+
+    form {
+        width: 90%;
+        margin: 10px;
+
+    }
+    form input {
+        width: 90%;
+    }
+
+
+    #button {
+        padding: 10px 15px;
+        width: 15%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* About page */
+    .pri {
+        margin-left: 3%;
+        
+    }
+
+    .nav {
+        margin-left: 375px;
+    }
+    .main {
+        width: 735px;
+        left: 3%;
+        
+    }
+    img {
+        width:240px;
+        height:270px;
+    }
+
+    
+
+    /* Portfolio page */
+
+    .port-main {
+        width: 735px;
+        left: 3%;
+
+    }
+
+    .project1 {
+        margin-left: 55px;
+        
+    }
+
+    .project1 img {
+        width:280px;
+        height:200px;
+    }
+
+    .project1 p {
+        padding-right: 90px;
+    }
+
+    .project2 {
+        margin-left: 50px;
+        margin-right: 25px;
+    }
+
+    .project2 img {
+        width:280px;
+        height:200px;
+    }
+
+    .project2 p {
+        padding-right: 90px;
+    }
+    
+    .project3 {
+        margin-left: 55px;
+    }
+
+    .project3 img {
+        width:280px;
+        height:200px;
+    }
+
+    .project3 p {
+        padding-right: 115px;
+    }
+
+    .project4 {
+        margin-left: 50px;
+        margin-right: 25px;
+    }
+
+    .project4 img {
+        width:280px;
+        height:200px;
+    }
+
+    .project4 p {
+        padding-right: 95px;
+    }
+
+
+    /* Contact page */
+
+    form {
+        width: 95%;
+        margin-left: 20px;
+
+    }
+    form input {
+        width: 95%;
+    }
+    
+    form textarea {
+        width: 95%
+    }
+
+    #button {
+        padding: 10px 15px;
+        width: 15%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    
+    /* About page */
+
+    /* body {
+        width: 640px;
+        
+    } */
+    .pri {
+        position: relative;
+        top: -80px;
+        left: -20px;
+        width: 100%;
+        overflow: hidden;
+        
+    }
+
+    .name {
+        position: relative;
+        left: 160px;
+        top: -6px;
+        font-size: 40px;
+    }
+
+    .upper {
+        position: absolute;
+        margin-top: 80px;
+        width: 640px;
+        /* overflow: hidden; */
+
+    }
+
+    #about {
+        position: relative;
+        left: -360px;
+        top: -70px;
+        padding-right: 10px;
+    }
+
+    #portfolio {
+        position: relative;
+        left: -292px;
+        top: -132px;
+        padding-right: 10px;
+    }
+
+    #contact {
+        position: relative;
+        left: -196px;
+        top: -196px;
+    }
+
+    .main {
+        width: 98%;
+        left: 1%;
+        margin-top: 100px;
+        height: 500px;
+        overflow-y: scroll;
+        margin-right: 1%;
+        
+    }
+    img {
+        width:80%;
+        height:20%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+       
+    }
+    
+
+    .content p {
+        float: inline-start;
+        
+        
+    }
+
+    /* Portfolio page */
+
+    .port-main {
+        width: 98%;
+        margin-top: 100px;
+        left: 1%;
+        height: 500px;
+        overflow-y: scroll;
+        margin-right: 1%;
+
+    }
+
+    .project1 {
+        margin-left: 100px;
+        
+    }
+
+    .project1 img {
+        width:350px;
+        height:300px;
+
+    }
+
+    .project1 p {
+        width: 345px;
+        margin-left: 40px;
+        
+    }
+
+    .project2 {
+        margin-left: 100px;
+        margin-right: 25px;
+    }
+
+    .project2 img {
+        width:350px;
+        height:300px;
+    }
+
+    .project2 p {
+        width: 345px;
+        margin-left: 40px;
+    }
+
+    .project3 {
+        margin-left: 100px;
+        margin-right: 25px;
+    }
+
+    .project3 img {
+        width:350px;
+        height:300px;
+    }
+
+    .project3 p {
+        width: 345px;
+        margin-left: 40px;
+    }
+
+    .project4 {
+        margin-left: 100px;
+        margin-right: 25px;
+    }
+
+    .project4 img {
+        width:350px;
+        height:300px;
+    }
+
+    .project4 p {
+        width: 345px;
+        margin-left: 40px;
+    }
+
+
+    /* Contact page */
+
+    form {
+        width: 95%;
+        margin-left: 20px;
+
+    }
+    form input {
+        width: 95%;
+    }
+
+    form textarea {
+        width: 95%
+    }
+
+    #button {
+        padding: 10px 15px;
+        width: 15%;
+    }
+}    
